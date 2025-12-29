@@ -51,6 +51,12 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        lark: {
+          purple: "hsl(var(--lark-purple))",
+          "purple-dark": "hsl(var(--lark-purple-dark))",
+          pink: "hsl(var(--lark-pink))",
+          "pink-dark": "hsl(var(--lark-pink-dark))",
+        },
         gold: {
           DEFAULT: "hsl(var(--gold))",
           dark: "hsl(var(--gold-dark))",

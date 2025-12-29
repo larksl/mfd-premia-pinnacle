@@ -13,35 +13,39 @@ const getRankStyles = (rank: number) => {
   switch (rank) {
     case 1:
       return {
-        border: 'border-gold/50',
+        border: 'border-gold/60',
         glow: 'glow-gold',
         badge: 'bg-gradient-gold',
-        icon: 'text-gold',
-        ring: 'ring-2 ring-gold/30',
+        icon: 'text-gold-dark',
+        ring: 'ring-2 ring-gold/40',
+        cardBg: 'bg-gradient-to-br from-amber-50 to-yellow-50',
       };
     case 2:
       return {
-        border: 'border-silver/50',
+        border: 'border-silver/60',
         glow: 'glow-silver',
         badge: 'bg-gradient-silver',
-        icon: 'text-silver',
-        ring: 'ring-2 ring-silver/30',
+        icon: 'text-silver-dark',
+        ring: 'ring-2 ring-silver/40',
+        cardBg: 'bg-gradient-to-br from-slate-50 to-gray-100',
       };
     case 3:
       return {
-        border: 'border-bronze/50',
+        border: 'border-bronze/60',
         glow: 'glow-bronze',
         badge: 'bg-gradient-bronze',
-        icon: 'text-bronze',
-        ring: 'ring-2 ring-bronze/30',
+        icon: 'text-bronze-dark',
+        ring: 'ring-2 ring-bronze/40',
+        cardBg: 'bg-gradient-to-br from-orange-50 to-amber-50',
       };
     default:
       return {
         border: 'border-border',
         glow: '',
-        badge: 'bg-secondary',
-        icon: 'text-muted-foreground',
+        badge: 'bg-lark-purple',
+        icon: 'text-lark-purple',
         ring: '',
+        cardBg: 'bg-card',
       };
   }
 };
@@ -66,11 +70,12 @@ const LeaderboardCard = ({
     >
       <div
         className={cn(
-          'relative rounded-xl border bg-card p-5 transition-all duration-500',
-          'hover:scale-[1.02] hover:-translate-y-1',
+          'relative rounded-xl border p-5 transition-all duration-500 shadow-lg',
+          'hover:scale-[1.02] hover:-translate-y-1 hover:shadow-xl',
           styles.border,
           styles.glow,
           styles.ring,
+          styles.cardBg,
           'card-shine',
           rank === 1 && 'animate-pulse-glow'
         )}
@@ -80,7 +85,7 @@ const LeaderboardCard = ({
           className={cn(
             'absolute -top-3 -right-3 w-10 h-10 rounded-full flex items-center justify-center font-display font-bold text-lg shadow-lg',
             styles.badge,
-            rank <= 3 ? 'text-background' : 'text-foreground'
+            'text-white'
           )}
         >
           #{rank}
@@ -110,10 +115,10 @@ const LeaderboardCard = ({
 
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2 text-muted-foreground text-sm">
-              <Target className="w-4 h-4 text-primary" />
+              <Target className="w-4 h-4 text-lark-pink" />
               <span>Pipeline</span>
             </div>
-            <span className="font-medium text-primary">₹{pipelineRevenue}</span>
+            <span className="font-medium text-lark-pink">₹{pipelineRevenue}</span>
           </div>
         </div>
 
@@ -124,7 +129,7 @@ const LeaderboardCard = ({
             rank === 1 && 'bg-gradient-gold',
             rank === 2 && 'bg-gradient-silver',
             rank === 3 && 'bg-gradient-bronze',
-            rank > 3 && 'bg-gradient-to-r from-secondary to-muted'
+            rank > 3 && 'bg-gradient-lark'
           )}
         />
       </div>

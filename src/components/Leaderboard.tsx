@@ -16,14 +16,14 @@ const Leaderboard = () => {
       <div className="max-w-5xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary border border-border mb-6">
-            <Award className="w-5 h-5 text-primary" />
-            <span className="text-sm font-medium text-muted-foreground">MFD Premia Accelerator</span>
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-lark-purple/10 border border-lark-purple/20 mb-6">
+            <Award className="w-5 h-5 text-lark-purple" />
+            <span className="text-sm font-medium text-lark-purple">MFD Premia Accelerator</span>
           </div>
           
           <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">
             <span className="text-foreground">Leader</span>
-            <span className="text-gradient-gold">board</span>
+            <span className="text-gradient-lark">board</span>
           </h1>
           
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
@@ -34,11 +34,11 @@ const Leaderboard = () => {
         {/* Stats Cards */}
         <div className="grid sm:grid-cols-2 gap-4 mb-16">
           <div className="relative group">
-            <div className="absolute inset-0 bg-gradient-gold opacity-10 rounded-xl blur-xl group-hover:opacity-20 transition-opacity" />
-            <div className="relative bg-card border border-gold/30 rounded-xl p-6 glow-gold">
+            <div className="absolute inset-0 bg-gradient-lark opacity-10 rounded-xl blur-xl group-hover:opacity-20 transition-opacity" />
+            <div className="relative bg-card border border-lark-purple/30 rounded-xl p-6 shadow-lg glow-purple">
               <div className="flex items-center gap-3 mb-3">
-                <div className="p-2 rounded-lg bg-gradient-gold">
-                  <Banknote className="w-5 h-5 text-background" />
+                <div className="p-2 rounded-lg bg-gradient-lark">
+                  <Banknote className="w-5 h-5 text-white" />
                 </div>
                 <span className="text-sm text-muted-foreground">Total LAMF Disbursed</span>
               </div>
@@ -50,11 +50,11 @@ const Leaderboard = () => {
           </div>
 
           <div className="relative group">
-            <div className="absolute inset-0 bg-primary opacity-10 rounded-xl blur-xl group-hover:opacity-20 transition-opacity" />
-            <div className="relative bg-card border border-primary/30 rounded-xl p-6">
+            <div className="absolute inset-0 bg-gradient-pink opacity-10 rounded-xl blur-xl group-hover:opacity-20 transition-opacity" />
+            <div className="relative bg-card border border-lark-pink/30 rounded-xl p-6 shadow-lg">
               <div className="flex items-center gap-3 mb-3">
-                <div className="p-2 rounded-lg bg-primary">
-                  <PieChart className="w-5 h-5 text-background" />
+                <div className="p-2 rounded-lg bg-gradient-pink">
+                  <PieChart className="w-5 h-5 text-white" />
                 </div>
                 <span className="text-sm text-muted-foreground">Total Portfolio Analyzed</span>
               </div>
@@ -70,7 +70,7 @@ const Leaderboard = () => {
         <div className="relative">
           {/* Background decorative elements */}
           <div className="absolute inset-0 pointer-events-none">
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-lark-purple/5 rounded-full blur-3xl" />
           </div>
 
           {/* Top 3 - Podium Style */}
@@ -107,7 +107,7 @@ const Leaderboard = () => {
             href="https://www.larkfinserv.com/mfd-premia"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-gradient-gold text-background font-semibold hover:opacity-90 transition-opacity"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-gradient-pink text-white font-semibold hover:opacity-90 transition-opacity shadow-lg"
           >
             Learn More About MFD Premia
           </a>
