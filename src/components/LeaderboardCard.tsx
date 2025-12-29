@@ -83,7 +83,7 @@ const LeaderboardCard = ({
         {/* Rank Badge */}
         <div
           className={cn(
-            'absolute top-3 right-3 w-8 h-8 rounded-full flex items-center justify-center font-display font-bold text-sm shadow-lg',
+            'absolute -top-3 -right-3 w-10 h-10 rounded-full flex items-center justify-center font-display font-bold text-lg shadow-lg',
             styles.badge,
             'text-white'
           )}
