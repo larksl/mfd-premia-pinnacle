@@ -42,7 +42,7 @@ const Leaderboard = () => {
                 </div>
                 <span className="text-sm text-muted-foreground">Total LAMF Disbursed</span>
               </div>
-              <div className="font-display text-3xl sm:text-4xl font-bold text-foreground">
+              <div className="font-display text-5xl sm:text-6xl lg:text-7xl font-bold text-foreground">
                 ₹<AnimatedCounter target={1.03} duration={2500} decimals={2} /> Cr
               </div>
               <p className="text-xs text-muted-foreground mt-2">By MFD Premia Members</p>
@@ -58,7 +58,7 @@ const Leaderboard = () => {
                 </div>
                 <span className="text-sm text-muted-foreground">Total Portfolio Analyzed</span>
               </div>
-              <div className="font-display text-3xl sm:text-4xl font-bold text-foreground">
+              <div className="font-display text-5xl sm:text-6xl lg:text-7xl font-bold text-foreground">
                 ₹<AnimatedCounter target={7.85} duration={2500} decimals={2} /> Cr
               </div>
               <p className="text-xs text-muted-foreground mt-2">By MFD Premia Members</p>
