@@ -40,7 +40,7 @@ const Leaderboard = () => {
                 <div className="p-2 rounded-lg bg-gradient-lark">
                   <Banknote className="w-5 h-5 text-white" />
                 </div>
-                <span className="text-sm text-muted-foreground">Total LAMF Disbursed</span>
+                <span className="text-base font-medium text-muted-foreground">Total LAMF Disbursed</span>
               </div>
               <div className="font-display text-3xl sm:text-4xl font-bold text-foreground">
                 ₹<AnimatedCounter target={1.03} duration={2500} decimals={2} /> Cr
@@ -56,7 +56,7 @@ const Leaderboard = () => {
                 <div className="p-2 rounded-lg bg-gradient-pink">
                   <PieChart className="w-5 h-5 text-white" />
                 </div>
-                <span className="text-sm text-muted-foreground">Total Portfolio Analyzed</span>
+                <span className="text-base font-medium text-muted-foreground">Total Portfolio Analyzed</span>
               </div>
               <div className="font-display text-3xl sm:text-4xl font-bold text-foreground">
                 ₹<AnimatedCounter target={7.85} duration={2500} decimals={2} /> Cr
