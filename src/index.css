@@ -6,53 +6,60 @@
 
 @layer base {
   :root {
-    --background: 222 47% 8%;
-    --foreground: 210 40% 98%;
+    --background: 252 60% 98%;
+    --foreground: 252 40% 15%;
 
-    --card: 222 47% 11%;
-    --card-foreground: 210 40% 98%;
+    --card: 0 0% 100%;
+    --card-foreground: 252 40% 15%;
 
-    --popover: 222 47% 11%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 252 40% 15%;
 
-    --primary: 45 93% 58%;
-    --primary-foreground: 222 47% 8%;
+    --primary: 340 82% 60%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 222 30% 18%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 252 30% 95%;
+    --secondary-foreground: 252 40% 15%;
 
-    --muted: 222 30% 15%;
-    --muted-foreground: 215 20% 55%;
+    --muted: 252 20% 92%;
+    --muted-foreground: 252 15% 45%;
 
-    --accent: 45 93% 58%;
-    --accent-foreground: 222 47% 8%;
+    --accent: 252 70% 55%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 222 30% 20%;
-    --input: 222 30% 20%;
-    --ring: 45 93% 58%;
+    --border: 252 20% 88%;
+    --input: 252 20% 88%;
+    --ring: 340 82% 60%;
 
     --radius: 0.75rem;
 
-    /* Custom tokens */
-    --gold: 45 93% 58%;
-    --gold-dark: 43 96% 45%;
-    --silver: 220 14% 70%;
-    --silver-dark: 220 14% 50%;
-    --bronze: 30 60% 50%;
+    /* Brand colors from Lark */
+    --lark-purple: 252 70% 55%;
+    --lark-purple-dark: 252 75% 35%;
+    --lark-pink: 340 82% 60%;
+    --lark-pink-dark: 340 82% 50%;
+    
+    /* Rank colors */
+    --gold: 45 93% 50%;
+    --gold-dark: 43 96% 40%;
+    --silver: 220 14% 55%;
+    --silver-dark: 220 14% 40%;
+    --bronze: 30 60% 45%;
     --bronze-dark: 30 60% 35%;
     
-    --glow-gold: 0 0 30px hsl(45 93% 58% / 0.4);
-    --glow-silver: 0 0 25px hsl(220 14% 70% / 0.3);
-    --glow-bronze: 0 0 25px hsl(30 60% 50% / 0.3);
+    --glow-gold: 0 0 25px hsl(45 93% 50% / 0.35);
+    --glow-silver: 0 0 20px hsl(220 14% 55% / 0.25);
+    --glow-bronze: 0 0 20px hsl(30 60% 45% / 0.25);
+    --glow-purple: 0 0 40px hsl(252 70% 55% / 0.3);
     
-    --gradient-gold: linear-gradient(135deg, hsl(45 93% 65%), hsl(43 96% 50%));
-    --gradient-silver: linear-gradient(135deg, hsl(220 14% 80%), hsl(220 14% 55%));
-    --gradient-bronze: linear-gradient(135deg, hsl(30 60% 60%), hsl(30 60% 40%));
-    --gradient-dark: linear-gradient(180deg, hsl(222 47% 12%), hsl(222 47% 6%));
-    --gradient-card: linear-gradient(145deg, hsl(222 30% 14%), hsl(222 30% 10%));
+    --gradient-gold: linear-gradient(135deg, hsl(45 93% 58%), hsl(43 96% 45%));
+    --gradient-silver: linear-gradient(135deg, hsl(220 14% 70%), hsl(220 14% 50%));
+    --gradient-bronze: linear-gradient(135deg, hsl(30 60% 55%), hsl(30 60% 40%));
+    --gradient-lark: linear-gradient(135deg, hsl(252 75% 50%), hsl(280 70% 45%), hsl(252 70% 35%));
+    --gradient-pink: linear-gradient(135deg, hsl(340 82% 65%), hsl(340 82% 55%));
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -65,33 +72,25 @@
   }
 
   .dark {
-    --background: 222 47% 8%;
-    --foreground: 210 40% 98%;
-
-    --card: 222 47% 11%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222 47% 11%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 45 93% 58%;
-    --primary-foreground: 222 47% 8%;
-
-    --secondary: 222 30% 18%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 222 30% 15%;
-    --muted-foreground: 215 20% 55%;
-
-    --accent: 45 93% 58%;
-    --accent-foreground: 222 47% 8%;
-
+    --background: 252 60% 98%;
+    --foreground: 252 40% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 252 40% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 252 40% 15%;
+    --primary: 340 82% 60%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 252 30% 95%;
+    --secondary-foreground: 252 40% 15%;
+    --muted: 252 20% 92%;
+    --muted-foreground: 252 15% 45%;
+    --accent: 252 70% 55%;
+    --accent-foreground: 0 0% 100%;
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 222 30% 20%;
-    --input: 222 30% 20%;
-    --ring: 45 93% 58%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 252 20% 88%;
+    --input: 252 20% 88%;
+    --ring: 340 82% 60%;
   }
 }
 
@@ -111,11 +110,26 @@
 }
 
 @layer utilities {
-  .text-gradient-gold {
-    background: var(--gradient-gold);
+  .text-gradient-lark {
+    background: var(--gradient-lark);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+  }
+
+  .text-gradient-pink {
+    background: var(--gradient-pink);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-gradient-lark {
+    background: var(--gradient-lark);
+  }
+
+  .bg-gradient-pink {
+    background: var(--gradient-pink);
   }
 
   .bg-gradient-gold {
@@ -142,6 +156,10 @@
     box-shadow: var(--glow-bronze);
   }
 
+  .glow-purple {
+    box-shadow: var(--glow-purple);
+  }
+
   .card-shine {
     position: relative;
     overflow: hidden;
@@ -157,7 +175,7 @@
     background: linear-gradient(
       90deg,
       transparent,
-      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.3),
       transparent
     );
     animation: shine 3s infinite;
@@ -170,7 +188,7 @@
 
   @keyframes pulse-glow {
     0%, 100% { opacity: 1; }
-    50% { opacity: 0.7; }
+    50% { opacity: 0.85; }
   }
 
   @keyframes float {
