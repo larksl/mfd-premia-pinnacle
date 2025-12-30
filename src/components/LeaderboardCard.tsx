@@ -62,12 +62,28 @@ const LeaderboardCard = ({
   return (
     <div
       className={cn(
-        'relative group',
+        'relative group pt-3',
         isElevated && rank === 1 && 'transform -translate-y-6 scale-105 z-10',
         isElevated && rank !== 1 && 'transform -translate-y-2'
       )}
       style={{ animationDelay: `${rank * 0.1}s` }}
     >
+      <div
+        className={cn(
+          'absolute -top-0 right-3 w-10 h-10 rounded-full flex items-center justify-center font-display font-bold text-lg shadow-lg z-10',
+          styles.badge,
+          'text-white'
+        )}
+      >
+        #{rank}
+      </div>
+
+      {rank <= 3 && (
+        <div className={cn('absolute -top-1 left-4 z-10', styles.icon)}>
+          <Trophy className="w-6 h-6" fill="currentColor" />
+        </div>
+      )}
+
       <div
         className={cn(
           'relative rounded-xl border p-5 transition-all duration-500 shadow-lg',
@@ -80,24 +96,6 @@ const LeaderboardCard = ({
           rank === 1 && 'animate-pulse-glow'
         )}
       >
-        {/* Rank Badge */}
-        <div
-          className={cn(
-            'absolute -top-3 right-3 w-10 h-10 rounded-full flex items-center justify-center font-display font-bold text-lg shadow-lg',
-            styles.badge,
-            'text-white'
-          )}
-        >
-          #{rank}
-        </div>
-
-        {/* Trophy Icon for Top 3 */}
-        {rank <= 3 && (
-          <div className={cn('absolute -top-4 left-4', styles.icon)}>
-            <Trophy className="w-6 h-6" fill="currentColor" />
-          </div>
-        )}
-
         {/* Company Name */}
         <h3 className="font-display font-bold text-lg text-foreground mb-4 pr-8">
           {companyName}
