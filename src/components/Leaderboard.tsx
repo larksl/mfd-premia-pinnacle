@@ -22,8 +22,8 @@ const Leaderboard = () => {
           </div>
           
           <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">
-            <span className="text-foreground">Leader</span>
-            <span className="text-gradient-lark">board</span>
+            <span className="text-foreground">Day-Zero </span>
+            <span className="text-gradient-lark">Leaderboard</span>
           </h1>
           
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
@@ -98,20 +98,6 @@ const Leaderboard = () => {
           </div>
         </div>
 
-        {/* Footer CTA */}
-        <div className="text-center mt-16">
-          <p className="text-muted-foreground mb-4">
-            Join the MFD Premia program and compete for VC funding
-          </p>
-          <a
-            href="https://www.larkfinserv.com/mfd-premia"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-gradient-pink text-white font-semibold hover:opacity-90 transition-opacity shadow-lg"
-          >
-            Learn More About MFD Premia
-          </a>
-        </div>
       </div>
     </section>
   );
