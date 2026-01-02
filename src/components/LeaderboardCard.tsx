@@ -106,7 +106,7 @@ const LeaderboardCard = ({
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2 text-muted-foreground text-sm">
               <TrendingUp className={cn('w-4 h-4', styles.icon)} />
-              <span>Current Revenue</span>
+              <span>Projected Revenue</span>
             </div>
             <span className="font-semibold text-foreground">₹{currentRevenue}</span>
           </div>
