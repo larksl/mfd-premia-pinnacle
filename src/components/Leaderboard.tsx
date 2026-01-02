@@ -3,11 +3,11 @@ import AnimatedCounter from './AnimatedCounter';
 import LeaderboardCard from './LeaderboardCard';
 
 const leaderboardData = [
-  { rank: 1, companyName: 'Finowlish', currentRevenue: '7.04 Lac', pipelineRevenue: '0.7 Lac' },
-  { rank: 2, companyName: 'Nakshtra Ventures', currentRevenue: '1.59 Lac', pipelineRevenue: '0.25 Lac' },
-  { rank: 3, companyName: 'Staywealthy', currentRevenue: '1.07 Lac', pipelineRevenue: '0.11 Lac' },
-  { rank: 4, companyName: 'Jhaveri Securities', currentRevenue: '0.53 Lac', pipelineRevenue: '0.53 Lac' },
-  { rank: 5, companyName: 'Konfidence Investment', currentRevenue: '0.12 Lac', pipelineRevenue: '0.24 Lac' },
+  { rank: 1, companyName: 'Nakshtra Ventures', currentRevenue: '1.24 Lac', pipelineRevenue: '32.86 Lac' },
+  { rank: 2, companyName: 'Staywealthy', currentRevenue: '0.81 Lac', pipelineRevenue: '21.39 Lac' },
+  { rank: 3, companyName: 'Jhaveri Securities', currentRevenue: '0.39 Lac', pipelineRevenue: '10.45 Lac' },
+  { rank: 4, companyName: 'Konfidence Investment', currentRevenue: '0.09 Lac', pipelineRevenue: '2.28 Lac' },
+  { rank: 5, companyName: 'Vacant Spot', currentRevenue: '—', pipelineRevenue: '—' },
 ];
 
 const Leaderboard = () => {
