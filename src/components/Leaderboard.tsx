@@ -43,7 +43,7 @@ const Leaderboard = () => {
                 <span className="text-base font-medium text-muted-foreground">Total LAMF Sanctioned</span>
               </div>
               <div className="font-display text-3xl sm:text-4xl font-bold text-foreground">
-                ₹<AnimatedCounter target={1.03} duration={2500} decimals={2} /> Cr
+                ₹<AnimatedCounter target={0.33} duration={2500} decimals={2} /> Cr
               </div>
               <p className="text-xs text-muted-foreground mt-2">By MFD Premia Members</p>
             </div>
@@ -59,7 +59,7 @@ const Leaderboard = () => {
                 <span className="text-base font-medium text-muted-foreground">Total Portfolio Fetched</span>
               </div>
               <div className="font-display text-3xl sm:text-4xl font-bold text-foreground">
-                ₹<AnimatedCounter target={7.85} duration={2500} decimals={2} /> Cr
+                ₹<AnimatedCounter target={14.3} duration={2500} decimals={2} /> Cr
               </div>
               <p className="text-xs text-muted-foreground mt-2">By MFD Premia Members</p>
             </div>
