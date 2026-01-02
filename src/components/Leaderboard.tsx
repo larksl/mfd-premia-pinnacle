@@ -1,4 +1,4 @@
-import { Award, Banknote, PieChart } from 'lucide-react';
+import { Award, Banknote, PieChart, TrendingUp } from 'lucide-react';
 import AnimatedCounter from './AnimatedCounter';
 import LeaderboardCard from './LeaderboardCard';
 
@@ -32,7 +32,7 @@ const Leaderboard = () => {
         </div>
 
         {/* Stats Cards */}
-        <div className="grid sm:grid-cols-2 gap-4 mb-16">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-16">
           <div className="relative group">
             <div className="absolute inset-0 bg-gradient-lark opacity-10 rounded-xl blur-xl group-hover:opacity-20 transition-opacity" />
             <div className="relative bg-card border border-lark-purple/30 rounded-xl p-6 shadow-lg glow-purple">
@@ -40,7 +40,7 @@ const Leaderboard = () => {
                 <div className="p-2 rounded-lg bg-gradient-lark">
                   <Banknote className="w-5 h-5 text-white" />
                 </div>
-                <span className="text-base font-medium text-muted-foreground">Total LAMF Disbursed</span>
+                <span className="text-base font-medium text-muted-foreground">Total LAMF Sanctioned</span>
               </div>
               <div className="font-display text-3xl sm:text-4xl font-bold text-foreground">
                 ₹<AnimatedCounter target={1.03} duration={2500} decimals={2} /> Cr
@@ -56,10 +56,26 @@ const Leaderboard = () => {
                 <div className="p-2 rounded-lg bg-gradient-pink">
                   <PieChart className="w-5 h-5 text-white" />
                 </div>
-                <span className="text-base font-medium text-muted-foreground">Total Portfolio Analyzed</span>
+                <span className="text-base font-medium text-muted-foreground">Total Portfolio Analyzed for LAMF</span>
               </div>
               <div className="font-display text-3xl sm:text-4xl font-bold text-foreground">
                 ₹<AnimatedCounter target={7.85} duration={2500} decimals={2} /> Cr
+              </div>
+              <p className="text-xs text-muted-foreground mt-2">By MFD Premia Members</p>
+            </div>
+          </div>
+
+          <div className="relative group">
+            <div className="absolute inset-0 bg-gradient-lark opacity-10 rounded-xl blur-xl group-hover:opacity-20 transition-opacity" />
+            <div className="relative bg-card border border-lark-purple/30 rounded-xl p-6 shadow-lg">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="p-2 rounded-lg bg-gradient-lark">
+                  <TrendingUp className="w-5 h-5 text-white" />
+                </div>
+                <span className="text-base font-medium text-muted-foreground">Aggregate AUM</span>
+              </div>
+              <div className="font-display text-3xl sm:text-4xl font-bold text-foreground">
+                ₹<AnimatedCounter target={40244} duration={2500} decimals={0} /> Cr
               </div>
               <p className="text-xs text-muted-foreground mt-2">By MFD Premia Members</p>
             </div>
