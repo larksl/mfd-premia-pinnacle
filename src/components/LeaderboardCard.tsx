@@ -114,7 +114,7 @@ const LeaderboardCard = ({
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2 text-muted-foreground text-sm">
               <Target className="w-4 h-4 text-lark-pink" />
-              <span>Pipeline</span>
+              <span>AUM Preserved</span>
             </div>
             <span className="font-medium text-lark-pink">₹{pipelineRevenue}</span>
           </div>
